@@ -7,19 +7,58 @@
 # Write pseudocode, not Python code. Use clear indentation and course-appropriate
 # keywords such as INPUT, OUTPUT, IF, ELSE, WHILE, SET, or similar terms.
 
-# TODO 1: Identify the information the movement process needs.
+# TODO 1: # The movement process needs:
+# - direction: the direction the player wants to move
+# - current_room: the room the player is currently in
+
 # Consider the player's current room and movement command.
 
-# TODO 2: Prompt for and receive the player's movement command.
+# TODO 2: BEGIN move(direction, current_room)
 
-# TODO 3: Validate whether the requested movement is possible from the
+    # Check if the direction is valid from the current room
+    IF direction is in current_room.exits THEN
+
+        # Move to the connected room
+        next_room ← current_room.exits[direction]
+
+        DISPLAY "You move to the " + next_room.name
+
+        RETURN next_room
+
+    ELSE
+        # Invalid direction
+        DISPLAY "You can't go that way."
+        RETURN current_room
+    END IF
+
+END
+
+
+# TODO 3: # The movement process supports the game by allowing the player to explore
+# different rooms, collect required items, and progress toward the final goal.
+# Without movement, the player could not navigate the game world or complete
+# the objectives needed to win.
+
 # current room. Show the decision clearly.
 
-# TODO 4: Describe what happens when the movement command is valid.
+# TODO 4: # The movement process supports the player experience by giving the player
+# control over where to go and what to explore. Clear movement feedback helps
+# the player understand the game world, make decisions, and feel engaged in
+# progressing through the story.
+
 # Include the room update and player output.
 
-# TODO 5: Describe what happens when the movement command is invalid.
+# TODO 5: # The movement process supports the overall program by providing a consistent
+# and reusable way to update the player's location. It ensures the game loop
+# can check the player's new room, display updated information, and determine
+# whether the player has reached required items or the final objective.
+
 # Include the output the player should receive.
 
-# TODO 6: Show how movement fits into repeated gameplay.
+# TODO 6: # To validate the movement process, I would test moving in all valid and invalid
+# directions from each room. This ensures the function correctly updates the
+# player's location when an exit exists and prevents movement when it does not.
+# I would also confirm that the correct messages display to the player and that
+# the game loop continues to function after each movement.
+
 # The final game continues accepting commands until a required ending occurs.
