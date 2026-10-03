@@ -6,26 +6,33 @@
 ## Theme and Storyline
 
 **Theme:**
+Theme: A sci‑fi survival adventure aboard a damaged research starship drifting near a hostile alien planet.
 
-TODO: Name and briefly describe your game's theme.
 
 **Storyline:**
 
-TODO: In one short paragraph, explain the setting, the player's goal, the items
-the player must gather, and the threat created by the villain.
+Storyline: The player awakens in the Cryo Bay after an emergency shutdown and discovers the ship is failing. A hostile alien creature has boarded the vessel, and the only way to escape is to gather six critical repair items scattered across the ship. Once all items are collected, the player can reach the escape shuttle—so long as they avoid the creature’s lair in the Reactor Core until the very end.
 
 ## Rooms
 
 Project One requires a minimum of eight rooms.
 
-1. TODO: Start room
-2. TODO: Room
-3. TODO: Room
-4. TODO: Room
-5. TODO: Room
-6. TODO: Room
-7. TODO: Room
-8. TODO: Villain room
+1.Start room: Cryo Bay
+
+Room: Med Lab
+
+Room: Engineering
+
+Room: Hydroponics
+
+Room: Armory
+
+Room: Bridge
+
+Room: Cargo Hold
+
+Villain room: Reactor Core
+
 
 Add more rooms if your design needs them.
 
@@ -34,19 +41,19 @@ Add more rooms if your design needs them.
 With the minimum eight-room design, Project One requires at least six items.
 Every room except the start room and villain room must contain one item.
 
-1. TODO: Item
-2. TODO: Item
-3. TODO: Item
-4. TODO: Item
-5. TODO: Item
-6. TODO: Item
+1. Med Scanner (Med Lab)
+2. Power Cell (Engineering)
+3. Nutrient Gel (Hydrponics)
+4. Plasma Cutter (Armory)
+5. Navigation Chip (Bridge)
+6. Fuel Canister (Cargo Hold)
 
 If you add rooms beyond the minimum, add an item for every additional room
 except the start room and villain room.
 
 ## Villain
 
-TODO: Identify and briefly describe the villain.
+Villain: A hostile alien creature that has infiltrated the ship and lurks in the Reactor Core.
 
 ## Storyboard and Map Check
 
