@@ -5,27 +5,27 @@
 
 ## Theme and Storyline
 
-**Theme:**
-
-TODO: Name and briefly describe your game's theme.
+Theme:
+A sci‑fi survival adventure aboard a damaged research starship drifting near a hostile alien planet.
 
 **Storyline:**
 
-TODO: In one short paragraph, explain the setting, the player's goal, the items
-the player must gather, and the threat created by the villain.
+The player awakens in the Cryo Bay after an emergency shutdown and discovers the ship is failing. A hostile alien creature has boarded the vessel, and the only way to escape is to gather six critical repair items scattered across the ship. Once all items are collected, the player can reach the escape shuttle—so long as they avoid the creature’s lair in the Reactor Core until the very end.
+**Settings:**
+The game takes place aboard a damaged research starship drifting near a hostile alien planet after a catastrophic systems failure. The player awakens alone and must explore the ship to gather six essential repair items—the Med Scanner, Power Cell, Nutrient Gel, Plasma Cutter, Navigation Chip, and Fuel Canister—needed to launch the escape shuttle. As they move through the ship’s dark and unstable rooms, they must avoid the Reactor Core, where a hostile alien creature lurks and will attack if encountered before all items are collected. The player’s goal is to gather every item and escape the ship without falling victim to the alien threat.
 
 ## Rooms
 
 Project One requires a minimum of eight rooms.
 
-1. TODO: Start room
-2. TODO: Room
-3. TODO: Room
-4. TODO: Room
-5. TODO: Room
-6. TODO: Room
-7. TODO: Room
-8. TODO: Villain room
+1. Cryo Bay
+2. Med Lab
+3. Engineering
+4. Hydroponics
+5. Armory
+6. Bridge
+7. Cargo Hold
+8. Reactor Core
 
 Add more rooms if your design needs them.
 
@@ -34,19 +34,19 @@ Add more rooms if your design needs them.
 With the minimum eight-room design, Project One requires at least six items.
 Every room except the start room and villain room must contain one item.
 
-1. TODO: Item
-2. TODO: Item
-3. TODO: Item
-4. TODO: Item
-5. TODO: Item
-6. TODO: Item
+1. Med Scanner
+2. Power Cell
+3. Nutrient Gel
+4. Plasma Cutter
+5. Navigation chip
+6. Fuel Canister
 
 If you add rooms beyond the minimum, add an item for every additional room
 except the start room and villain room.
 
 ## Villain
+The villain is a hostile alien creature hiding in the Reactor Core. It hunts by sound and attacks anyone who enters its lair, creating constant danger as the player explores the ship. Encountering it before collecting all six repair items results in immediate failure, making the creature the final threat the player must avoid until they are ready to escape
 
-TODO: Identify and briefly describe the villain.
 
 ## Storyboard and Map Check
 
