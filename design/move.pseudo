@@ -8,18 +8,60 @@
 # keywords such as INPUT, OUTPUT, IF, ELSE, WHILE, SET, or similar terms.
 
 # TODO 1: Identify the information the movement process needs.
-# Consider the player's current room and movement command.
+# The movement process needs:
+# - direction: the direction the player wants to move (north, south, east, west)
+# - current_room: the room the player is currently in
 
-# TODO 2: Prompt for and receive the player's movement command.
 
-# TODO 3: Validate whether the requested movement is possible from the
-# current room. Show the decision clearly.
+# TODO 2: BEGIN move(direction, current_room)
 
-# TODO 4: Describe what happens when the movement command is valid.
-# Include the room update and player output.
+    # Check if the direction is valid from the current room
+    IF direction is in current_room.exits THEN
 
-# TODO 5: Describe what happens when the movement command is invalid.
-# Include the output the player should receive.
+        # Move to the connected room
+        next_room ← current_room.exits[direction]
 
-# TODO 6: Show how movement fits into repeated gameplay.
-# The final game continues accepting commands until a required ending occurs.
+        DISPLAY "You move to the " + next_room.name
+
+        RETURN next_room
+
+    ELSE
+        # Invalid direction
+        DISPLAY "You can't go that way."
+        RETURN current_room
+    END IF
+
+END
+
+
+# TODO 3:# The movement process supports the game by allowing the player to explore
+# different rooms, collect items, and progress toward the final goal. Without
+# movement, the player could not navigate the game world or complete any of the
+# required objectives.
+  
+
+
+# TODO 4: # When the movement command is valid, the player successfully moves into the
+# room in the chosen direction. The current room is updated to the connected
+# room, and the player receives output confirming the movement, such as
+# "You move to the Kitchen" or the name of the new room. This lets the player
+# know the command worked and that their location has changed.
+
+
+
+# TODO 5: # When the movement command is invalid, it means the player tried to move in a
+# direction that the current room does not allow. In this case, the player's
+# location does not change, and the game keeps them in the same room. The player
+# receives output such as "You can't go that way." to let them know the command
+# was not successful.
+
+
+
+# TODO 6: # Movement fits into repeated gameplay because the game continues running in a
+# loop that accepts player commands until the ending condition is reached. After
+# each movement command is handled, the game returns to the main loop, updates
+# the player's location, displays the new room information, and waits for the
+# next command. This allows the player to keep exploring and moving through the
+# game world until they collect all required items or reach the final room.
+
+
