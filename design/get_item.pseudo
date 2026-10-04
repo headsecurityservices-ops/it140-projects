@@ -9,22 +9,55 @@
 
 START get_item
 
-    # TODO 1: Identify the information the get-item process needs.
+    # TODO 1: # The item process needs:
+    # - current_room: the room the player is currently in
+    # - inventory: the list of items the player has collected
+
     # Consider the current room, item in that room, and player's inventory.
 
-    # TODO 2: Prompt for and receive the player's get-item command.
+    # TODO 2: BEGIN get_item(current_room, inventory)
 
-    # TODO 3: Validate whether the requested item is available in the current
-    # room. Show the decision clearly.
+    IF current_room contains an item THEN
+        item ← current_room.item
+        ADD item to inventory
+        REMOVE item from current_room
+        DISPLAY "You picked up the " + item
+    ELSE
+        DISPLAY "There is no item to pick up here."
+    END IF
 
-    # TODO 4: Describe what happens when the item request is valid.
-    # Include the inventory update and player output.
+END
 
-    # TODO 5: Describe what happens when the item request is invalid.
-    # Include the output the player should receive.
 
-    # TODO 6: Show how the process returns to or continues the larger gameplay
-    # loop after the command is handled.
+    # TODO 3: # Item collection supports the game by allowing the player to gather the
+    # required objects needed to win. Without item pickup, the player could not
+    # complete objectives or progress toward the final challenge.
+
+    
+
+    
+
+    # TODO 4: # When the item request is valid, the player successfully picks up the item in
+    # the current room. The item is added to the player's inventory, and the item is
+    # removed from the room so it cannot be collected again. The player receives
+    # output confirming the item was picked up.
+
+    
+
+    # TODO 5: # When the item request is invalid, it means the current room does not contain
+    # an item for the player to pick up. In this case, the inventory does not change
+    # and no item is added. The player receives output informing them that there is
+    # no item available in the room.
+
+    
+
+    # TODO 6: # After the item request is handled, the process returns control to the main
+    # gameplay loop. The game continues by displaying the updated room information,
+    # checking the player's inventory, and waiting for the next command. This allows
+    # the player to keep exploring, moving, or collecting items as part of the
+    # ongoing game flow.
+
+    
 
 END get_item
 
