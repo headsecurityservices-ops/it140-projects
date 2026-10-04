@@ -7,19 +7,44 @@
 # Write pseudocode, not Python code. Use clear indentation and course-appropriate
 # keywords such as INPUT, OUTPUT, IF, ELSE, WHILE, SET, or similar terms.
 
-# TODO 1: Identify the information the movement process needs.
-# Consider the player's current room and movement command.
+# TODO 1: # The movement process needs two pieces of information:
+# 1. The player's current room, which determines what exits are available.
+# 2. The player's movement command (north, south, east, west), which indicates
+#    the direction the player wants to move.
 
-# TODO 2: Prompt for and receive the player's movement command.
 
-# TODO 3: Validate whether the requested movement is possible from the
-# current room. Show the decision clearly.
 
-# TODO 4: Describe what happens when the movement command is valid.
-# Include the room update and player output.
+# TODO 2: # The movement process begins by prompting the player for a movement command.
+# The game asks the player which direction they want to move and receives the
+# input so it can determine what action to take next.
 
-# TODO 5: Describe what happens when the movement command is invalid.
-# Include the output the player should receive.
 
-# TODO 6: Show how movement fits into repeated gameplay.
+# TODO 3: # The movement process checks whether the player's requested direction exists
+# as an exit in the current room. If the direction is listed in the room's
+# exits, the movement is valid. If the direction is not listed, the movement
+# is invalid and cannot be performed.
+
+
+
+# TODO 4: # When the movement command is valid, the player successfully moves into the
+# room in the chosen direction. The current room is updated to the connected
+# room, and the player receives output confirming the movement, such as
+# "You move to the Kitchen" or the name of the new room.
+
+
+
+# TODO 5: # When the movement command is invalid, it means the player tried to move in a
+# direction that the current room does not allow. The player's location does not
+# change, and the player receives output such as "You can't go that way." to let
+# them know the command was not successful.
+
+
+
+# TODO 6: # Movement fits into repeated gameplay because the game continues running in a
+# loop that accepts player commands until the ending condition is reached. After
+# each movement command is handled, the game returns to the main loop, updates
+# the player's location, displays the new room information, and waits for the
+# next command. This allows the player to keep exploring and moving through the
+# game world until they collect all required items or reach the final room.
+
 # The final game continues accepting commands until a required ending occurs.
